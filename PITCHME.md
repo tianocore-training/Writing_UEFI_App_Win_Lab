@@ -157,7 +157,7 @@ Note:
 
 
 
----?image=/assets/images/slides2/Slide7.JPG
+---?image=/assets/images/slides/Slide7.JPG
 @title[EDK II HelloWorld  App  Lab ]
 <p align="right"><span class="gold" ><b>EDK II HelloWorld  App  Lab  </b></span></p>
 <span style="font-size:0.8em" >First Setup for Building EDK II for Nt32, See <a href="https://gitpitch.com/Laurie0131/Platform_Build_WIN_LAB/master#/2">Lab Setup for NT32 </a></span>
@@ -259,7 +259,7 @@ Source from Helloworld.c
 
 
 
----?image=/assets/images/slides2/Slide11.JPG
+---?image=/assets/images/slides/Slide11.JPG
 @title[EDK II HelloWorld  App  Lab solution]
 <p align="right"><span class="gold" ><b>EDK II HelloWorld  App  Solution </b></span></p>
 
@@ -284,7 +284,7 @@ Note:
 
 
 
----?image=/assets/images/slides2/Slide12.JPG
+---?image=/assets/images/slides/Slide12.JPG
 @title[EDK II HelloWorld  App  Lab solution 02]
 <p align="right"><span class="gold" ><b>EDK II HelloWorld  App  Solution </b></span></p>
 
@@ -539,7 +539,7 @@ Note:
 
 
 
----?image=/assets/images/slides2/Slide22.JPG
+---?image=/assets/images/slides/Slide22.JPG
 @title[Possible Build Errors ]
 <p align="right"><span class="gold" ><b>Possible Build Errors</b></span></p>
 
@@ -569,7 +569,7 @@ Note:
 
 
 
----?image=/assets/images/slides2/Slide25.JPG
+---?image=/assets/images/slides/Slide25.JPG
 @title[Possible Build Errors 04 ]
 <p align="right"><span class="gold" ><b>Possible Build Errors</b></span></p>
 
@@ -578,7 +578,7 @@ The SampleApp.inf section `[LibraryClasses]` did not reference `UefiApplicationE
 
 
 
----?image=/assets/images/slides2/Slide26.JPG
+---?image=/assets/images/slides/Slide26.JPG
 @title[Possible Build Errors 05]
 <p align="right"><span class="gold" ><b>Possible Build Errors</b></span></p>
 
@@ -600,7 +600,7 @@ Ensure the SampleApp.inf BaseName is SampleApp
 
 Note:
 
----?image=/assets/images/slides2/Slide28.JPG
+---?image=/assets/images/slides/Slide28.JPG
 @title[Lab 2.1: Compiling w/out Build Switch ]
 <p align="right"><span class="gold" ><b>Lab 2.1: Compiling w/out Build Switch</b></span></p>
 <span style="font-size:0.8em" >At the VS Command Prompt, Build <font color="yellow">without</font> the `-D` Switch</span>
@@ -626,7 +626,7 @@ Note:
 Note:
 
 
----?image=/assets/images/slides2/Slide29.JPG
+---?image=/assets/images/slides/Slide29.JPG
 @title[Lab 2.1: Compiling w/out Build Switch 02]
 <p align="right"><span class="gold" ><b>Lab 2.1: Compiling w/out Build Switch</b></span></p>
 <p style="line-height:80%"><span style="font-size:0.8em" >Edit the file `C:/FW/edk2/Nt32Pkg/Nt32Pkg.dsc`<br>

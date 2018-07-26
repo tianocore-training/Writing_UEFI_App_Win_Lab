@@ -1236,14 +1236,14 @@ End of Lab 5
 ---
 @title[Bonus Lab :Open Protocol example]
 <p align="right"><span class="gold" ><b>Bonus Exercise: Open Protocol Example</b></span></p>
-<br>
-<span style="font-size:0.9em" >Write an Application using argv, argc parameters</span>
+<span style="font-size:0.9em" >Write an Application using `argv`, `argc` parameters</span>
 <ul style="line-height:0.7;">
  <li><span style="font-size:0.8em" >Captures command line parameters using Open Protocol</span></li>
- <li><span style="font-size:0.8em" >Need to open SHELL_INTERFACE_PROTOCOL</span></li>
+ <li><span style="font-size:0.8em" >Will need to open </span><span style="font-size:0.5em" >`SHELL_INTERFACE_PROTOCOL`</span></li>
  <li><span style="font-size:0.8em" >Note  : Requires ShellPkg</span></li>
 </ul>
-Build SampleApp 
+<br>
+<span style="font-size:0.9em" > Build SampleApp</span>
 ```
   C:/FW/edk2> Build
   C:/FW/edk2> Build Run

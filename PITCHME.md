@@ -163,7 +163,8 @@ Note:
 <span style="font-size:0.8em" >First Setup for Building EDK II for Nt32, See <a href="https://gitpitch.com/Laurie0131/Platform_Build_WIN_LAB/master#/2">Lab Setup for NT32 </a></span>
 <br>
 <div class="left1">
-<p style="line-height:70%"><span style="font-size:0.8em" >Locate and Open `C:/FW/edk2/MdeModulePkg/Application/HelloWorld/HelloWorld.c`</span></p>
+<p style="line-height:60%"><span style="font-size:0.8em" >Locate and Open </span><span style="font-size:0.5em" ><br>
+`MdeModulePkg/Application/HelloWorld/HelloWorld.c`</span></p>
 <span style="font-size:0.8em" >Notice the PCD values</span>
 </div>
 <div class="right1">
@@ -604,11 +605,13 @@ Note:
 @title[Lab 2.1: Compiling w/out Build Switch ]
 <p align="right"><span class="gold" ><b>Lab 2.1: Compiling w/out Build Switch</b></span></p>
 <span style="font-size:0.8em" >At the VS Command Prompt, Build <font color="yellow">without</font> the `-D` Switch</span>
-```shell
+<div class="left1">
+<pre>
+```
   C:/FW/edk2> Build
   C:/FW/edk2> Build Run
 ```
-<div class="left1">
+</pre>
 <p style="line-height:80%"><span style="font-size:0.8em" >Check the Shell Version with the “`Ver`” command</span></p>
 <p style="line-height:80%"><span style="font-size:0.8em" >Build with the `-D BUILD_NEW_SHELL` switch</span></p>
 <pre>
@@ -989,6 +992,7 @@ UefiMain (
   IN EFI_SYSTEM_TABLE  *SystemTable
   )
 {
+// Lab 4
   UINTN          EventIndex;
   
 // Lab 3
@@ -1203,7 +1207,7 @@ Same as slide
   C:/FW/edk2> Build
   C:/FW/edk2> Build Run
 ```
-<div class="left">
+
 <span style="font-size:0.8em" >Run the application from the shell</span>
 <br>
 <br>
@@ -1211,6 +1215,7 @@ Same as slide
 <br>
 <br>
 <br>
+<div class="left">
 <span style="font-size:0.8em" >Exit</span>
 <pre>
 ```
@@ -1232,23 +1237,23 @@ End of Lab 5
 @title[Bonus Lab :Open Protocol example]
 <p align="right"><span class="gold" ><b>Bonus Exercise: Open Protocol Example</b></span></p>
 <br>
-Write an Application using argv, argc parameters
-
-- Captures command line parameters using Open Protocol
-- Need to open SHELL_INTERFACE_PROTOCOL
-- Note  : Requires ShellPkg
-
+<span style="font-size:0.9em" >Write an Application using argv, argc parameters</span>
+<ul style="line-height:0.7;">
+ <li><span style="font-size:0.8em" >Captures command line parameters using Open Protocol</span></li>
+ <li><span style="font-size:0.8em" >Need to open SHELL_INTERFACE_PROTOCOL</span></li>
+ <li><span style="font-size:0.8em" >Note  : Requires ShellPkg</span></li>
+</ul>
 Build SampleApp 
 ```
   C:/FW/edk2> Build
   C:/FW/edk2> Build Run
 ```
-Run the application from the shell 
+<span style="font-size:0.9em" >Run the application from the shell </span>
 ```
  Shell> SampleApp  test1 test2
 ```
 
-- (hint: `..FW/LabSampleCode/ShellAppSample` has the solution)
+<span style="font-size:0.8em" >(hint: `..FW/LabSampleCode/ShellAppSample` has the solution)</span>
 
 
 Note:

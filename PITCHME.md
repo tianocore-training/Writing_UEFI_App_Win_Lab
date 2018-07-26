@@ -466,7 +466,7 @@ Note:
   <ul style="list-style-type:none" style="line-height:0.7;">
      <li><span style="font-size:0.7em" >`[Components . . .]`</span>  </li>
      <li><span style="font-size:0.7em" >&nbsp;&nbsp;Add INF to components section, before build options </span>  </li>
-     <li><span style="font-size:0.7em" >&nbsp;&nbsp;Hint: add after comment&nbsp;</span><span style="font-size:0.6em" >"<font color="#888888"># Add new modules here</font>"</span><br><span style="font-size:0.7em" > &nbsp;&nbsp;<span style="background-color: #101010">&nbsp;`SampleApp/SampleApp.inf` &nbsp;</span> </span> </li>
+     <li><span style="font-size:0.7em" >&nbsp;&nbsp;Hint: add after comment&nbsp;</span><span style="font-size:0.6em" >"<font color="#8C8C8C"># Add new modules here</font>"</span><br><span style="font-size:0.7em" > &nbsp;&nbsp;<span style="background-color: #101010">&nbsp;`SampleApp/SampleApp.inf` &nbsp;</span> </span> </li>
  </ul>
  <li><span style="font-size:0.8em" >2.&nbsp;&nbsp; <font color="yellow">`.INF` </font> file (SampleApp/SampleApp.inf) </span>  </li>
   <ul style="list-style-type:none" style="line-height:0.7;">

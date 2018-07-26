@@ -161,12 +161,15 @@ Note:
 @title[EDK II HelloWorld  App  Lab ]
 <p align="right"><span class="gold" ><b>EDK II HelloWorld  App  Lab  </b></span></p>
 <span style="font-size:0.8em" >First Setup for Building EDK II for Nt32, See <a href="https://gitpitch.com/Laurie0131/Platform_Build_WIN_LAB/master#/2">Lab Setup for NT32 </a></span>
-<p style="line-height:60%"><span style="font-size:0.8em" >Locate and Open </span><span style="font-size:0.5em" ><br>
+<p style="line-height:60%"><span style="font-size:0.8em" >Locate and Open </span><span style="font-size:0.6em" ><br>
 `MdeModulePkg/Application/HelloWorld/HelloWorld.c`</span></p>
 <div class="left1">
-<span style="font-size:0.8em" >Notice the PCD values</span><br><br>
-<span style="font-size:0.8em" >Build Nt32 Emulation <br>
-<span style="font-size:0.8em" >Then Run HelloWorld</span><br>
+<span style="font-size:0.8em" >Notice the PCD values</span><br>
+<br>
+<br>
+<br>
+<span style="font-size:0.8em" >Build Nt32 Emulation </span><br>
+<p style="line-height:70%"><span style="font-size:0.8em" >Then Run HelloWorld at the Shell command interface</span></p>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -464,7 +467,7 @@ Note:
   <ul style="list-style-type:none">
      <li><span style="font-size:0.7em" >`[Components . . .]`</span>  </li>
      <li><span style="font-size:0.7em" >&nbsp;&nbsp;Add INF to components section, before build options </span>  </li>
-     <li><span style="font-size:0.7em" >&nbsp;&nbsp;Hint: add to the end of the file <span style="background-color: #101010">`SampleApp/SampleApp.inf` </span> </span> </li>
+     <li><span style="font-size:0.7em" >&nbsp;&nbsp;Hint: add after <font color"gray">`# Add new modules here`</font> comment<span style="background-color: #101010">&nbsp;`SampleApp/SampleApp.inf` &nbsp;</span> </span> </li>
  </ul>
  <li><span style="font-size:0.8em" >2.&nbsp;&nbsp; <font color="yellow">`.INF` </font> file (SampleApp/SampleApp.inf) </span>  </li>
   <ul style="list-style-type:none">
@@ -825,7 +828,6 @@ Note:
 ```
 </pre>
 <p style="line-height:70%"><span style="font-size:0.8em" >Verify by using the Shell “`mem`” command </span></p>
-<br>
 <span style="font-size:0.8em" >Exit</span>
 <pre>
 ```

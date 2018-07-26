@@ -161,11 +161,12 @@ Note:
 @title[EDK II HelloWorld  App  Lab ]
 <p align="right"><span class="gold" ><b>EDK II HelloWorld  App  Lab  </b></span></p>
 <span style="font-size:0.8em" >First Setup for Building EDK II for Nt32, See <a href="https://gitpitch.com/Laurie0131/Platform_Build_WIN_LAB/master#/2">Lab Setup for NT32 </a></span>
-<br>
-<div class="left1">
 <p style="line-height:60%"><span style="font-size:0.8em" >Locate and Open </span><span style="font-size:0.5em" ><br>
 `MdeModulePkg/Application/HelloWorld/HelloWorld.c`</span></p>
-<span style="font-size:0.8em" >Notice the PCD values</span>
+<div class="left1">
+<span style="font-size:0.8em" >Notice the PCD values</span><br><br>
+<span style="font-size:0.8em" >Build Nt32 Emulation <br>
+<span style="font-size:0.8em" >Then Run HelloWorld</span><br>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -804,28 +805,37 @@ Note:
  
  - c code and inf file
 
-
----
+---?image=/assets/images/slides/Slide37.JPG
 @title[Build and Test SampleApp]
 <p align="right"><span class="gold" ><b>Lab 3 : Build and Test SampleApp</b></span></p>
 <span style="font-size:0.8em" >At the VS Command Prompt </span>
-```shell
+<div class="left1">
+<pre>
+```
   C:/FW/edk2> Build
   C:/FW/edk2> Build Run
 ```
+</pre>
 <span style="font-size:0.8em" >Run the application from the shell</span>
-```shell
+<pre>
+```
  Shell> SampleApp
  System Table: 0x07E34018
  Shell> 
 ```
-<span style="font-size:0.8em" >Verify by using the “`mem`” command </span><br>
-
+</pre>
+<p style="line-height:70%"><span style="font-size:0.8em" >Verify by using the Shell “`mem`” command </span></p>
+<br>
 <span style="font-size:0.8em" >Exit</span>
-```shell
+<pre>
+```
  Shell> Reset
 ```
-
+</pre>
+</div>
+<div class="right1">
+<span style="font-size:0.8em" >&nbsp;  </span>
+</div>
 
 Note:
 

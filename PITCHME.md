@@ -1457,7 +1457,7 @@ Note:
 <p align="Left"><span class="gold" ><b>Lab 7:  Adding Functionality to SampleCApp</b></span></p>
 <br>
 <div class="left1">
-<span style="font-size:0.8em" >In this lab, you’ll add functionality to SampleCApp the same as in Lab 7.5. This lab will use EADK libraries so the coding style is similar to standard C.</span>
+<span style="font-size:0.8em" >In this lab, you’ll add functionality to SampleCApp the same as in Lab 5. This lab will use EADK libraries so the coding style is similar to standard C.</span>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>

@@ -461,22 +461,21 @@ Note:
 ---
 @title[Lab 2: Application Lab – Update Files]
 <p align="right"><span class="gold" ><b>Lab 2: Application Lab – Update Files</b></span></p>
-<br>
 <ul style="list-style-type:none">
  <li><span style="font-size:0.8em" >1.&nbsp;&nbsp; <font color="yellow">`.DSC` </font> (Nt32Pkg/Nt32Pkg.dsc)</span>  </li>
-  <ul style="list-style-type:none">
+  <ul style="list-style-type:none" style="line-height:0.7;">
      <li><span style="font-size:0.7em" >`[Components . . .]`</span>  </li>
      <li><span style="font-size:0.7em" >&nbsp;&nbsp;Add INF to components section, before build options </span>  </li>
-     <li><span style="font-size:0.7em" >&nbsp;&nbsp;Hint: add after <font color"gray">`# Add new modules here`</font> comment<span style="background-color: #101010">&nbsp;`SampleApp/SampleApp.inf` &nbsp;</span> </span> </li>
+     <li><span style="font-size:0.7em" >&nbsp;&nbsp;Hint: add after <font color"gray">`# Add new modules here`</font>&nbsp;&nbsp; comment<span style="background-color: #101010">&nbsp;`SampleApp/SampleApp.inf` &nbsp;</span> </span> </li>
  </ul>
  <li><span style="font-size:0.8em" >2.&nbsp;&nbsp; <font color="yellow">`.INF` </font> file (SampleApp/SampleApp.inf) </span>  </li>
-  <ul style="list-style-type:none">
+  <ul style="list-style-type:none" style="line-height:0.7;">
      <li><span style="font-size:0.7em" >Packages (all depend on MdePkg)</span>  </li>
      <li><span style="font-size:0.7em" ><span style="background-color: #101010">&nbsp;&nbsp;`[Packages]`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MdePkg/MdePkg.dec` </span> </span> </li>
      <li><span style="font-size:0.7em" ><span style="background-color: #101010">&nbsp;&nbsp;`[LibraryClasses]`&nbsp;&nbsp;`UefiApplicationEntryPoint`</span> </span> </li>
  </ul>
  <li><span style="font-size:0.8em" >3.&nbsp;&nbsp; <font color="yellow">`.C` </font> file - Header references File (SampleApp/SampleApp.c) </span>  </li>
-  <ul style="list-style-type:none">
+  <ul style="list-style-type:none" style="line-height:0.7;">
      <li><span style="font-size:0.7em" ><span style="background-color: #101010">`#include <Uefi.h>`</span> </span> </li>
      <li><span style="font-size:0.7em" ><span style="background-color: #101010">`#include <Library/UefiApplicationEntryPoint.h>`</span></span>  </li>
  </ul>

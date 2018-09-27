@@ -6,7 +6,9 @@
 #### How to Write a UEFI Application
 <span style="font-size:0.8em" >with Windows Labs</span>
 <br>
-<span style="font-size:0.75em" ><a href='http://www.tianocore.org'>tianocore.org</a></span>
+<span style="font-size:0.75em" ><a href='http://www.tianocore.org'>tianocore.org</a></span><br>
+<span style="font-size:0.5em" >See also <a href="https://github.com/Laurie0131/Writing_UEFI_App_WIN_Lab/blob/master/LabGuide.md">LabGuide.md</a> for Copy&Paste examples in labs</span>
+
 Note:
   PITCHME.md for UEFI / EDK II Training  How to Write a UEFI Application Lab
 

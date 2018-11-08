@@ -84,7 +84,7 @@ Note:
 ## Slide 7 @title[EDK II HelloWorld  App  Lab ]
 <p align="right"><b>EDK II HelloWorld  App  Lab  </b></p>
 
-First Setup for Building EDK II for Nt32, See <a href="https://gitpitch.com/Laurie0131/Platform_Build_WIN_LAB/master#/2">Lab Setup for NT32 </a>
+First Setup for Building EDK II for Nt32, See <a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Lab/master#/2">Lab Setup for NT32 </a>
 
 Locate and Open <br>
 `MdeModulePkg/Application/HelloWorld/HelloWorld.c`

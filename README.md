@@ -32,4 +32,4 @@
 # Writing_UEFI_App_WIN_Lab
 How to Write a UEFI Application with EDK II with Windows Lab
 
-To see the Slides goto https://gitpitch.com/Laurie0131/Writing_UEFI_App_WIN_Lab/master#/
+To see the Slides goto https://gitpitch.com/tianocore-training/Writing_UEFI_App_Win_Lab/master#/

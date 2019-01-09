@@ -98,10 +98,55 @@ Note:
 
 
 
----?image=/assets/images/slides/Slide5.JPG
+---?image=/assets/images/slides/Slide4.JPG
 @title[PCD Syntax review]
 ### <p align="center"><span class="gold" >PCD Syntax</span></p>
 <span style="font-size:0.9em">PCDs can be located anywhere within the Workspace even though a different package will use those PCDs for a given project</span>
+
+
+@snap[west span-30 ]
+<br>
+<br>
+<br>
+<p align="center"><span style="font-size:01.49em; font-weight: bold;">@color[yellow](.DEC)</span></p>
+@box[bg-gold2 text-black waved  ](<span style="font-size:01.280em; font-weight: bold;" >Define <br>PCD</span>)
+<br>
+@snapend
+
+@snap[midpoint span-30 ]
+<br>
+<br>
+<br>
+<p align="center"><span style="font-size:01.49em; font-weight: bold;">@color[yellow](.INF)</span></p>
+@box[bg-green-pp text-black waved   ](<span style="font-size:01.280em; font-weight: bold;" >Reference PCD</span>)
+<br>
+@snapend
+
+
+@snap[east span-30 ]
+<br>
+<br>
+<br>
+<p align="center"><span style="font-size:01.49em; font-weight: bold;">@color[yellow](.DSC)</span></p>
+@box[bg-lt-blue-pp text-black waved  ](<span style="font-size:01.280em; font-weight: bold;" >Modify <br>PCD</span>)
+<br>
+@snapend
+
+
+@snap[west span-100 fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p align="left"><span style="font-size:01.125em; font-weight: bold;"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Package &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Platform</span></p>
+@snapend
+
 
 Note:
 
@@ -139,6 +184,7 @@ Note:
 - Platform level file which describes the contents of the build for a specific platform.
 - PCD entries are assigned values and types for the platform build.  Cannot conflict with established restrictions.
 - In most cases, PCD entries do not have SKU enabled and have a single value associated with them. However, a SKU PCD entry may have multiple values.
+
 
 
 ---?image=/assets/images/slides/Slide_LabSec.JPG

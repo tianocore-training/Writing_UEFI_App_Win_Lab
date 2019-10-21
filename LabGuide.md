@@ -80,7 +80,7 @@ Note:
 ## Slide 7 @title[EDK II HelloWorld  App  Lab ]
 <b>EDK II HelloWorld  App  Lab  </b></p>
 
-First Setup for Building EDK II for Nt32, See <a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Emulator_Lab/master#/9">Lab Setup for Emulator </a>
+First Setup for Building EDK II for Emulator, See <a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Emulator_Lab/master#/9">Lab Setup for Emulator </a>
 
 Locate and Open <br>
 `edk2/MdeModulePkg/Application/HelloWorld/HelloWorld.c`
@@ -89,7 +89,7 @@ Notice the PCD values
 <br>
 <br>
 <br>
-Build Nt32 Emulation <br>
+Build Emulation <br>
 Then Run HelloWorld at the Shell command interface</span></p>
 
 Note:
@@ -210,7 +210,7 @@ Note:
 
 
 
----?image=/assets/images/slides/Slide12.JPG
+
 ## SLide 12 @title[EDK II HelloWorld  App  Lab solution 02]
 <p align="left"><span class="gold" ><b>EDK II HelloWorld  App  Solution </b></span></p>
 
@@ -388,18 +388,30 @@ Note:
   <ul style="list-style-type:none" style="line-height:0.7;">
      <li><span style="font-size:01.em" >`[Components . . .]`</span>  </li>
      <li><span style="font-size:01.em" >&nbsp;&nbsp;Add INF to components section, before build options </span>  </li>
-     <li><span style="font-size:01.em" >&nbsp;&nbsp;Hint: add after comment&nbsp;</span><span style="background-color: #101010"><span style="font-size:01.em" >"<font color="white"># Add new modules here</font>"</span><br><span style="font-size:01.em" > &nbsp;&nbsp;<span style="background-color: #101010">&nbsp;`SampleApp/SampleApp.inf` &nbsp;</span> </span> </li>
- </ul>
+     <li><span style="font-size:01.em" >&nbsp;&nbsp;Hint: add after comment&nbsp;"# Add new modules here "</span></li>
+<pre>
+       # Add new modules here
+       SampleApp/SampleApp.inf
+
+</pre>
+     </ul>
  <li><span style="font-size:01.em" >2.&nbsp;&nbsp; <font color="yellow">`.INF` </font> file (SampleApp/SampleApp.inf) </span>  </li>
   <ul style="list-style-type:none" style="line-height:0.7;">
-     <li><span style="font-size:01.em" >Packages (all depend on MdePkg)</span>  </li>
-     <li><span style="font-size:01.em" ><span style="background-color: #101010">&nbsp;&nbsp;`[Packages]`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MdePkg/MdePkg.dec` </span> </span> </li>
-     <li><span style="font-size:01.em" ><span style="background-color: #101010">&nbsp;&nbsp;`[LibraryClasses]`&nbsp;&nbsp;`UefiApplicationEntryPoint`</span> </span> </li>
+     <li><span style="font-size:01.em" >Packages (all depend on MdePkg) and Library Classes </span>  </li>
+     <pre>
+     [Packages] 
+        MdePkg/MdePkg.dec
+     [LibraryClasses]  
+       UefiApplicationEntryPoint
+     </pre>
  </ul>
  <li><span style="font-size:01.em" >3.&nbsp;&nbsp; <font color="yellow">`.C` </font> file - Header references File (SampleApp/SampleApp.c) </span>  </li>
-  <ul style="list-style-type:none" style="line-height:0.7;">
-     <li><span style="font-size:01.em" ><span style="background-color: #101010">`#include <Uefi.h>`</span> </span> </li>
-     <li><span style="font-size:01.em" ><span style="background-color: #101010">`#include <Library/UefiApplicationEntryPoint.h>`</span></span>  </li>
+ 
+ <pre>
+ #include &lt;Uefi.h>
+ #include &lt;Library/UefiApplicationEntryPoint.h>
+ </pre>
+
  </ul>
 </ul>
 
@@ -419,21 +431,25 @@ Note:
 
 Note:
 
-<pre>
-EmulatorPkg/EmulatorPkg.dsc
+EmulatorPkg/EmulatorPkg.dsc in the components sectio of the file towards the botom
+
+```
  SampleApp/SampleApp.inf
+```
 
 SampleApp/SampleApp.inf
+```
+     [Packages] 
+        MdePkg/MdePkg.dec
+     [LibraryClasses]  
+       UefiApplicationEntryPoint
+```
 
- MdePkg/MdePkg.dec
- UefiApplicationEntryPoint
-
-
-SampleApp/SampleApp.c
-
+SampleApp/SampleApp.c - near the top of the file
+```
 #include <Uefi.h>
 #include <Library/UefiApplicationEntryPoint.h>
-</pre>
+```
 
 
 
@@ -1001,7 +1017,7 @@ Create a Simple Typewriter Function using the SampleApp from Lab 4
 
 
  
----?image=/assets/images/slides/Slide51.JPG
+
 ## Slide 50 @title[Lab 5 :Typewriter Function Solution]
 <p align="left"><span class="gold" ><b>Lab 5 : Solution</b></span></p>
 <br>
@@ -1144,7 +1160,7 @@ In this lab, you’ll write an application with the same functionality as Sample
 Note:
 
  
----?image=/assets/images/slides/Slide57.JPG
+
 ## Slide 56 @title[Lab 6: With EDK II EADK]
 <p align="left"><span class="gold" ><b>Lab 6: With EDK II EADK</b></span></p>
 <br>
@@ -1171,7 +1187,7 @@ Copy and paste directory
        C:\FW\edk2-ws\edk2-libc\AppPkg\Applications\SampleCApp 
 ```
 
----?image=/assets/images/slides/Slide59.JPG
+
 ## Slide 58 @title[Lab 6: EDK II using EADK 02]
 <p align="left"><span class="gold" ><b>Lab 6: EDK II using EADK</b></span></p>
 <br>

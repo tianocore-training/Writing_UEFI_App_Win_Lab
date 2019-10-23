@@ -1274,7 +1274,7 @@ Build AppPkg at the VS Command prompt
 Copy the built application to the Emulator runtime directory (note VS Tool)
 
 ```shell
-  copy  Build\AppPkg\DEBUG_VS2015x86\X64\SampleCApp.efi Build\EmulatorX64\DEBUG_VS2015x86\X64
+  C:/FW/edk2-ws/edk2>copy  ..\Build\AppPkg\DEBUG_VS2015x86\X64\SampleCApp.efi  ..\Build\EmulatorX64\DEBUG_VS2015x86\X64
 ```
 <span style="font-size:0.8em" >Run the Emulation
 ```shell
@@ -1392,7 +1392,7 @@ Build AppPkg at the VS Command prompt
 Copy the built application to the Emulator runtime directory (note VS Tool)
 
 ```shell
-  C:/FW/edk2-ws/edk2> Build\AppPkg\DEBUG_VS2015x86\X64\SampleCApp.efi                        Build\EmulatorX64\DEBUG_VS2015x86\X64
+  C:/FW/edk2-ws/edk2>copy  ..\Build\AppPkg\DEBUG_VS2015x86\X64\SampleCApp.efi  ..\Build\EmulatorX64\DEBUG_VS2015x86\X64
 
 ```
 Run the Nt32 Emulation

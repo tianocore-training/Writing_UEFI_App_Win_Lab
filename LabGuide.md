@@ -328,6 +328,31 @@ Note:
 
 ```
 
+Add the following:
+
+
+```
+ [Defines]
+   INF_VERSION  = 0x00010005
+   BASE_NAME    = SampleApp
+   FILE_GUID    = 
+   MODULE_TYPE  = UEFI_APPLICATION
+   VERSION_STRING =   1.0            
+   ENTRY_POINT  = UefiMain
+
+ [Sources]
+   SampleApp.c
+ [Packages]
+   #XXXXXXXX
+  
+ [LibraryClasses]
+  #XXXXXXXXXXXXX
+    
+ [Guids]
+  # . . .
+
+
+```
 Get a GUID: <a href="http://www.guidgenerator.com/">guidgerator.com</a>
 
 Note:
@@ -600,8 +625,7 @@ Re-build - CD to `C:\FW\edk2-ws\edk2`
 Check the Shell Version with the “`Ver`” command 
 
 Note:
-Will need to Delete dir:   %WORKSPACE%/Build/EmulatorX64/DEBUG_tag/X64/ShellPkg 
-Between each build
+
 
 ---
 ## Slide 31@title[Lab 2: What we learned from LAB 2]
@@ -614,7 +638,6 @@ Between each build
 4. The module’s .inf  file is required to be included in the platform .dsc file
 5. The [Packages] section is required at minimum to include MdePkg/dePkg.dec
 6. When using a Build Switch (-D) on the command line it overrides the value in the .DSC file
-7. If it is a Library is getting updated, it is required to Build clean or delete the previous built module(s) including the library depending on what is getting re-built.
 
 ---
 ## Slide 32 @title[Lab 2: If there are Build Errors ]

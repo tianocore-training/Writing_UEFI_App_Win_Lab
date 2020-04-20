@@ -12,7 +12,7 @@
 Note:
   PITCHME.md for UEFI / EDK II Training  How to Write a UEFI Application Lab
 
-  Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2020, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -599,6 +599,16 @@ Note:
 - The prototype for UefiMain is predetermined and you can see an example of a prototype by downloading a sample application. 
 - So a couple of the things that the prototype will require are a pointer to the system table and a image handle parameter. 
 
+Add the following:
+
+```
+ SampleApp
+ UEFI_APPLICATION
+ SampleApp.c
+```
+
+
+
 
 ---?image=/assets/images/slides/Slide17.JPG
 @title[Lab 2: Sample Application C file]
@@ -1014,7 +1024,7 @@ Check the Shell version with "<font face="Consolas">Ver</font>"  command
 
 @snap[south-west span-100 ]
 <p style="line-height:45%" align="left" ><span style="font-size:0.5em;" >
-@color[yellow](NOTE:) You will need to Delete directory:   <font face="Consolas">%WORKSPACE%/Build/EmulatorX64/DEBUG_@color[cyan](<i>tag</i>)/X64/@color[yellow](ShellPkg) </font>
+@color[yellow](NOTE:) You may need to Delete directory:   <font face="Consolas">%WORKSPACE%/Build/EmulatorX64/DEBUG_@color[cyan](<i>tag</i>)/X64/@color[yellow](ShellPkg) </font>
 Between each build
 </span></p>
 @snapend
@@ -1031,7 +1041,6 @@ Note:
  <li><span style="font-size:0.7em">The module’s .inf  file is required to be included in the platform .dsc file </span></li>
  <li><span style="font-size:0.7em">The [Packages] section is required at minimum to include MdePkg/dePkg.dec </span></li>
  <li><span style="font-size:0.7em">When using a Build Switch (-D) on the command line it overrides the value in the .DSC file </span></li>
- <li><span style="font-size:0.7em">If it is a Library is getting updated, it is required to Build clean or delete the previous built module(s) including the library depending on what is getting re-built. </span></li>
 </ol>
 
 Note:
@@ -2281,7 +2290,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWIS
 ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY 
 OF SUCH DAMAGE.
 
-Copyright (c) 2019, Intel Corporation. All rights reserved.
+Copyright (c) 2020, Intel Corporation. All rights reserved.
 **/
 
 ```

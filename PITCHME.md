@@ -975,7 +975,7 @@ Check the Shell version with "Ver" command <br>
 
 @snap[south-west span-100 ]
 <p style="line-height:50%" align="left" ><span style="font-size:0.57em;" >
-@color[yellow](NOTE:) You will need to Delete directory:   <font face="Consolas">Build/EmulatorX64/DEBUG_@color[cyan](<i>tag</i>)/X64/@color[yellow](ShellPkg) </font>
+@color[yellow](NOTE:) You may need to Delete directory:   <font face="Consolas">Build/EmulatorX64/DEBUG_@color[cyan](<i>tag</i>)/X64/@color[yellow](ShellPkg) </font>
 Between each build
 </span></p>
 @snapend

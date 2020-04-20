@@ -335,7 +335,7 @@ Add the following:
  [Defines]
    INF_VERSION  = 0x00010005
    BASE_NAME    = SampleApp
-   FILE_GUID    = 
+   FILE_GUID    = 06226752-742c-4712-88d9-07f18def50ab
    MODULE_TYPE  = UEFI_APPLICATION
    VERSION_STRING =   1.0            
    ENTRY_POINT  = UefiMain

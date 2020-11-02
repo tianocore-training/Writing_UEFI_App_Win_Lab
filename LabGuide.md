@@ -1187,10 +1187,12 @@ Note:
 
 Using EADK with UEFI Application
 
+### **Labs 6-7 are Optional** 
 
 
 ---
 ## Slide 55 @title[Lab 6: Writing UEFI Applications with EADK]
+**Optional** 
 <br>
 
 ### Lab 6:  Writing UEFI Applications with EADK 
@@ -1203,6 +1205,7 @@ Note:
 --- 
 
 ## Slide 56 @title[Lab 6: With EDK II EADK]
+**Optional** 
 ### <b>Lab 6: With EDK II EADK</b> 
 <br>
 
@@ -1214,6 +1217,7 @@ Write the same application with the same functionality as SampleApp.c using the 
 
 ---
 ## Slide 57 @title[Lab 6: EDK II using EADK]
+**Optional** 
 ### <b>Lab 6: EDK II using EADK</b> 
 <br>
 
@@ -1230,6 +1234,7 @@ Copy and paste directory
 
 ---
 ## Slide 58 @title[Lab 6: EDK II using EADK 02]
+**Optional** 
 ### <b>Lab 6: EDK II using EADK</b> 
 <br>
 
@@ -1282,6 +1287,7 @@ main (
 ---
 
 ## Slide 59 @title[Lab 6 : Update AppPkg.dsc ]
+**Optional** 
 ### <b>Lab 6 : Update AppPkg.dsc </b> 
 
 Edit the AppPkg/AppPkg.dsc and add `SampleCApp.inf` at the end of the components section
@@ -1306,11 +1312,12 @@ Edit the AppPkg/AppPkg.dsc and add `SampleCApp.inf` at the end of the components
 ---
 
 ## Slide 60 @title[Lab 6 :Build and Test SampleCApp ]
+**Optional** 
 ### <b>Lab 6 :Build and Test SampleCApp</b> 
 Build AppPkg at the VS Command prompt
 
 ```shell
-  C:/FW/edk2-ws/edk2> build -p AppPkg/AppPkg.dsc –m AppPkg/Applications/SampleCApp/SampleCApp.inf
+  C:/FW/edk2-ws/edk2> build -p AppPkg/AppPkg.dsc –m AppPkg/Applications/SampleCApp/SampleCApp.inf -a X64
 
 ```
 Copy the built application to the Emulator runtime directory (note VS Tool)
@@ -1333,6 +1340,7 @@ Notice that the program will immediately unload because the main function is emp
 
 ---
 ## Slide 61 @title[Lab 7: Adding Functionality to SampleCApp]
+**Optional** 
 
 ### <b>Lab 7:  Adding Functionality to SampleCApp</b> 
 <br>
@@ -1343,6 +1351,7 @@ In this lab, you’ll add functionality to SampleCApp the same as in Lab 5. This
  ---
 
 ## Slide 62 @title[Lab 7: With EDK II EADK]
+**Optional** 
 ### <b>Lab 7: Add the same functionally from Lab 5</b> 
 <br>
 
@@ -1370,6 +1379,7 @@ See slide 66 for solution
 
 ---
 ## Slide 66 @title[Lab 7: With EDK II EADK solution]
+**Optional** 
 ### <b>Lab 7: Solution</b> 
 
 SampleCApp.c and SampleCApp.inf 
@@ -1438,12 +1448,13 @@ After compile notice the size of the final .EFI file is about 2K larger than the
 ---
 
 ## Slide 67 @title[Lab 7 :Build and Test SampleCApp ]
+**Optional** 
 ### <b>Lab 7 :Build and Test SampleCApp</b> 
 
 Build AppPkg at the VS Command prompt
 
 ```shell
-  C:/FW/edk2-ws/edk2> build -p AppPkg\AppPkg.dsc –m AppPkg\Applications\SampleCApp\SampleCApp.inf
+  C:/FW/edk2-ws/edk2> build -p AppPkg\AppPkg.dsc –m AppPkg\Applications\SampleCApp\SampleCApp.inf -a X64
 ```
 Copy the built application to the Emulator runtime directory (note VS Tool)
 
@@ -1451,7 +1462,7 @@ Copy the built application to the Emulator runtime directory (note VS Tool)
   C:/FW/edk2-ws/edk2>copy  ..\Build\AppPkg\DEBUG_VS2015x86\X64\SampleCApp.efi  ..\Build\EmulatorX64\DEBUG_VS2015x86\X64
 
 ```
-Run the Nt32 Emulation
+Run the  Emulation
 
 ```shell
   C:/FW/edk2-ws/edk2> RunEmulator.bat
